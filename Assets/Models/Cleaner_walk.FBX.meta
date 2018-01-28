@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 54b8084b6756c16439725675b3fc9b37
-timeCreated: 1517092067
+guid: 9d095a0268cfec14ea691ade10471d04
+timeCreated: 1517100932
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
@@ -8,77 +8,62 @@ ModelImporter:
     100000: Bone001
     100002: Bone002
     100004: Bone003
-    100006: //RootNode
-    100008: Cylinder002
-    100010: Cylinder008
-    100012: Cylinder009
-    100014: Cylinder010
-    100016: Cylinder012
-    100018: Cylinder013
-    100020: Cylinder014
-    100022: Dummy001
-    100024: Dummy002
-    100026: L_Arm
-    100028: Object001
-    100030: Plane001
-    100032: Point001
-    100034: Point002
-    100036: Point003
-    100038: Point004
-    100040: Point005
-    100042: Point006
-    100044: R_Arm
-    100046: Sphere001
-    100048: Bone004
-    100050: Bone005
-    100052: Bone006
-    100054: Bone007
-    100056: Bone008
-    100058: Bone009
-    100060: Bone010
-    100062: Bone011
-    100064: Bone012
-    100066: Bone013
-    100068: IK Chain001
-    100070: IK Chain002
+    100006: Bone004
+    100008: Bone005
+    100010: Bone006
+    100012: Bone007
+    100014: Bone008
+    100016: Bone009
+    100018: Bone010
+    100020: Bone011
+    100022: Bone012
+    100024: Bone013
+    100026: //RootNode
+    100028: Cylinder002
+    100030: Cylinder008
+    100032: Cylinder009
+    100034: Cylinder010
+    100036: Cylinder012
+    100038: Cylinder013
+    100040: Cylinder014
+    100042: Dummy001
+    100044: Dummy002
+    100046: IK Chain001
+    100048: IK Chain002
+    100050: Object001
+    100052: Point001
+    100054: Point002
+    100056: Sphere001
     400000: Bone001
     400002: Bone002
     400004: Bone003
-    400006: //RootNode
-    400008: Cylinder002
-    400010: Cylinder008
-    400012: Cylinder009
-    400014: Cylinder010
-    400016: Cylinder012
-    400018: Cylinder013
-    400020: Cylinder014
-    400022: Dummy001
-    400024: Dummy002
-    400026: L_Arm
-    400028: Object001
-    400030: Plane001
-    400032: Point001
-    400034: Point002
-    400036: Point003
-    400038: Point004
-    400040: Point005
-    400042: Point006
-    400044: R_Arm
-    400046: Sphere001
-    400048: Bone004
-    400050: Bone005
-    400052: Bone006
-    400054: Bone007
-    400056: Bone008
-    400058: Bone009
-    400060: Bone010
-    400062: Bone011
-    400064: Bone012
-    400066: Bone013
-    400068: IK Chain001
-    400070: IK Chain002
-    2100000: No Name
-    2100002: 08 - Default
+    400006: Bone004
+    400008: Bone005
+    400010: Bone006
+    400012: Bone007
+    400014: Bone008
+    400016: Bone009
+    400018: Bone010
+    400020: Bone011
+    400022: Bone012
+    400024: Bone013
+    400026: //RootNode
+    400028: Cylinder002
+    400030: Cylinder008
+    400032: Cylinder009
+    400034: Cylinder010
+    400036: Cylinder012
+    400038: Cylinder013
+    400040: Cylinder014
+    400042: Dummy001
+    400044: Dummy002
+    400046: IK Chain001
+    400048: IK Chain002
+    400050: Object001
+    400052: Point001
+    400054: Point002
+    400056: Sphere001
+    2100000: 08 - Default
     2300000: Cylinder008
     2300002: Cylinder009
     2300004: Cylinder010
@@ -86,8 +71,7 @@ ModelImporter:
     2300008: Cylinder013
     2300010: Cylinder014
     2300012: Object001
-    2300014: Plane001
-    2300016: Sphere001
+    2300014: Sphere001
     3300000: Cylinder008
     3300002: Cylinder009
     3300004: Cylinder010
@@ -95,19 +79,17 @@ ModelImporter:
     3300008: Cylinder013
     3300010: Cylinder014
     3300012: Object001
-    3300014: Plane001
-    3300016: Sphere001
-    4300000: Plane001
-    4300002: Sphere001
-    4300004: Object001
-    4300006: Cylinder002
-    4300008: Cylinder009
-    4300010: Cylinder008
-    4300012: Cylinder010
-    4300014: Cylinder013
-    4300016: Cylinder012
-    4300018: Cylinder014
-    7400000: Idle
+    3300014: Sphere001
+    4300000: Sphere001
+    4300002: Object001
+    4300004: Cylinder002
+    4300006: Cylinder013
+    4300008: Cylinder012
+    4300010: Cylinder014
+    4300012: Cylinder009
+    4300014: Cylinder008
+    4300016: Cylinder010
+    7400000: Walk
     9500000: //RootNode
     13700000: Cylinder002
   externalObjects: {}
@@ -138,10 +120,10 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Idle
+      name: Walk
       takeName: Take 001
       firstFrame: 0
-      lastFrame: 30
+      lastFrame: 42
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -187,7 +169,7 @@ ModelImporter:
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
-    useFileScale: 1
+    useFileScale: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0

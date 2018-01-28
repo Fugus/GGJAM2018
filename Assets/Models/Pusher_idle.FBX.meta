@@ -1,115 +1,79 @@
 fileFormatVersion: 2
-guid: 54b8084b6756c16439725675b3fc9b37
-timeCreated: 1517092067
+guid: 572b191bad087994386ef33cbd7b93d8
+timeCreated: 1517100932
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
-    100000: Bone001
-    100002: Bone002
-    100004: Bone003
-    100006: //RootNode
-    100008: Cylinder002
-    100010: Cylinder008
-    100012: Cylinder009
-    100014: Cylinder010
-    100016: Cylinder012
-    100018: Cylinder013
-    100020: Cylinder014
-    100022: Dummy001
-    100024: Dummy002
-    100026: L_Arm
-    100028: Object001
-    100030: Plane001
-    100032: Point001
-    100034: Point002
-    100036: Point003
-    100038: Point004
-    100040: Point005
-    100042: Point006
-    100044: R_Arm
-    100046: Sphere001
-    100048: Bone004
-    100050: Bone005
-    100052: Bone006
-    100054: Bone007
-    100056: Bone008
-    100058: Bone009
-    100060: Bone010
-    100062: Bone011
-    100064: Bone012
-    100066: Bone013
-    100068: IK Chain001
-    100070: IK Chain002
-    400000: Bone001
-    400002: Bone002
-    400004: Bone003
-    400006: //RootNode
-    400008: Cylinder002
-    400010: Cylinder008
-    400012: Cylinder009
-    400014: Cylinder010
-    400016: Cylinder012
-    400018: Cylinder013
-    400020: Cylinder014
-    400022: Dummy001
-    400024: Dummy002
-    400026: L_Arm
-    400028: Object001
-    400030: Plane001
-    400032: Point001
-    400034: Point002
-    400036: Point003
-    400038: Point004
-    400040: Point005
-    400042: Point006
-    400044: R_Arm
-    400046: Sphere001
-    400048: Bone004
-    400050: Bone005
-    400052: Bone006
-    400054: Bone007
-    400056: Bone008
-    400058: Bone009
-    400060: Bone010
-    400062: Bone011
-    400064: Bone012
-    400066: Bone013
-    400068: IK Chain001
-    400070: IK Chain002
-    2100000: No Name
-    2100002: 08 - Default
-    2300000: Cylinder008
-    2300002: Cylinder009
-    2300004: Cylinder010
-    2300006: Cylinder012
-    2300008: Cylinder013
-    2300010: Cylinder014
-    2300012: Object001
-    2300014: Plane001
-    2300016: Sphere001
-    3300000: Cylinder008
-    3300002: Cylinder009
-    3300004: Cylinder010
-    3300006: Cylinder012
-    3300008: Cylinder013
-    3300010: Cylinder014
-    3300012: Object001
-    3300014: Plane001
-    3300016: Sphere001
-    4300000: Plane001
-    4300002: Sphere001
-    4300004: Object001
-    4300006: Cylinder002
-    4300008: Cylinder009
-    4300010: Cylinder008
-    4300012: Cylinder010
-    4300014: Cylinder013
-    4300016: Cylinder012
-    4300018: Cylinder014
+    100000: Bip001
+    100002: Bip001 Footsteps
+    100004: Bip001 Head
+    100006: Bip001 HeadNub
+    100008: Bip001 L Calf
+    100010: Bip001 L Clavicle
+    100012: Bip001 L Finger0
+    100014: Bip001 L Finger0Nub
+    100016: Bip001 L Foot
+    100018: Bip001 L Forearm
+    100020: Bip001 L Hand
+    100022: Bip001 L Thigh
+    100024: Bip001 L Toe0
+    100026: Bip001 L Toe0Nub
+    100028: Bip001 L UpperArm
+    100030: Bip001 Neck
+    100032: Bip001 Pelvis
+    100034: Bip001 R Calf
+    100036: Bip001 R Clavicle
+    100038: Bip001 R Finger0
+    100040: Bip001 R Finger0Nub
+    100042: Bip001 R Foot
+    100044: Bip001 R Forearm
+    100046: Bip001 R Hand
+    100048: Bip001 R Thigh
+    100050: Bip001 R Toe0
+    100052: Bip001 R Toe0Nub
+    100054: Bip001 R UpperArm
+    100056: Bip001 Spine
+    100058: Bip001 Spine1
+    100060: Pusher_Body
+    100062: //RootNode
+    400000: Bip001
+    400002: Bip001 Footsteps
+    400004: Bip001 Head
+    400006: Bip001 HeadNub
+    400008: Bip001 L Calf
+    400010: Bip001 L Clavicle
+    400012: Bip001 L Finger0
+    400014: Bip001 L Finger0Nub
+    400016: Bip001 L Foot
+    400018: Bip001 L Forearm
+    400020: Bip001 L Hand
+    400022: Bip001 L Thigh
+    400024: Bip001 L Toe0
+    400026: Bip001 L Toe0Nub
+    400028: Bip001 L UpperArm
+    400030: Bip001 Neck
+    400032: Bip001 Pelvis
+    400034: Bip001 R Calf
+    400036: Bip001 R Clavicle
+    400038: Bip001 R Finger0
+    400040: Bip001 R Finger0Nub
+    400042: Bip001 R Foot
+    400044: Bip001 R Forearm
+    400046: Bip001 R Hand
+    400048: Bip001 R Thigh
+    400050: Bip001 R Toe0
+    400052: Bip001 R Toe0Nub
+    400054: Bip001 R UpperArm
+    400056: Bip001 Spine
+    400058: Bip001 Spine1
+    400060: Pusher_Body
+    400062: //RootNode
+    2100000: 08 - Default
+    4300000: Pusher_Body
     7400000: Idle
     9500000: //RootNode
-    13700000: Cylinder002
+    13700000: Pusher_Body
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -141,7 +105,7 @@ ModelImporter:
       name: Idle
       takeName: Take 001
       firstFrame: 0
-      lastFrame: 30
+      lastFrame: 40
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -168,7 +132,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 0.1
+    globalScale: 0.01
     meshCompression: 0
     addColliders: 0
     importVisibility: 1
@@ -187,7 +151,7 @@ ModelImporter:
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
-    useFileScale: 1
+    useFileScale: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0

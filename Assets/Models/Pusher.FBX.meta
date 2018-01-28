@@ -76,7 +76,7 @@ ModelImporter:
     3300000: Pusher_Head
     4300000: Pusher_Body
     4300002: Pusher_Head
-    7400000: Take 001
+    7400000: Walk
     9500000: //RootNode
     13700000: Pusher_Body
   externalObjects: {}
@@ -107,7 +107,7 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Take 001
+      name: Walk
       takeName: Take 001
       firstFrame: 0
       lastFrame: 26
