@@ -4,13 +4,10 @@ using UnityEngine;
 
 public class JaquotFakeGravity : MonoBehaviour
 {
+    public Transform bouleJaquot;
 
     [SerializeField]
-    private Transform bouleJaquot;
-
-    [SerializeField]
-    [Tooltip("")]
-    private float gravityFactor;
+    private float gravityFactor = 1f;
 
     public Vector3 fakeGravityDirection;
 
@@ -18,10 +15,7 @@ public class JaquotFakeGravity : MonoBehaviour
     {
         Rigidbody myRigidBody = GetComponent<Rigidbody>();
         fakeGravityDirection = (bouleJaquot.position - (myRigidBody.position - transform.up)).normalized;
-        myRigidBody.AddForceAtPosition(gravityFactor * Physics.gravity.magnitude * fakeGravityDirection.normalized, myRigidBody.position - 10 * transform.up, ForceMode.Force);
-        //myRigidBody.rotation = Quaternion.LookRotation(transform.forward, -fakeGravityDirection);
-		
-
+        myRigidBody.AddForceAtPosition((gravityFactor + myRigidBody.velocity.magnitude) * Physics.gravity.magnitude * fakeGravityDirection.normalized, myRigidBody.position - transform.up, ForceMode.Force);
     }
 
     private void OnDrawGizmos()

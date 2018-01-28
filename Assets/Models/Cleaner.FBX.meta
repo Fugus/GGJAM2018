@@ -1,0 +1,220 @@
+fileFormatVersion: 2
+guid: 54b8084b6756c16439725675b3fc9b37
+timeCreated: 1517092067
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Bone001
+    100002: Bone002
+    100004: Bone003
+    100006: //RootNode
+    100008: Cylinder002
+    100010: Cylinder008
+    100012: Cylinder009
+    100014: Cylinder010
+    100016: Cylinder012
+    100018: Cylinder013
+    100020: Cylinder014
+    100022: Dummy001
+    100024: Dummy002
+    100026: L_Arm
+    100028: Object001
+    100030: Plane001
+    100032: Point001
+    100034: Point002
+    100036: Point003
+    100038: Point004
+    100040: Point005
+    100042: Point006
+    100044: R_Arm
+    100046: Sphere001
+    100048: Bone004
+    100050: Bone005
+    100052: Bone006
+    100054: Bone007
+    100056: Bone008
+    100058: Bone009
+    100060: Bone010
+    100062: Bone011
+    100064: Bone012
+    100066: Bone013
+    100068: IK Chain001
+    100070: IK Chain002
+    400000: Bone001
+    400002: Bone002
+    400004: Bone003
+    400006: //RootNode
+    400008: Cylinder002
+    400010: Cylinder008
+    400012: Cylinder009
+    400014: Cylinder010
+    400016: Cylinder012
+    400018: Cylinder013
+    400020: Cylinder014
+    400022: Dummy001
+    400024: Dummy002
+    400026: L_Arm
+    400028: Object001
+    400030: Plane001
+    400032: Point001
+    400034: Point002
+    400036: Point003
+    400038: Point004
+    400040: Point005
+    400042: Point006
+    400044: R_Arm
+    400046: Sphere001
+    400048: Bone004
+    400050: Bone005
+    400052: Bone006
+    400054: Bone007
+    400056: Bone008
+    400058: Bone009
+    400060: Bone010
+    400062: Bone011
+    400064: Bone012
+    400066: Bone013
+    400068: IK Chain001
+    400070: IK Chain002
+    2100000: No Name
+    2100002: 08 - Default
+    2300000: Cylinder008
+    2300002: Cylinder009
+    2300004: Cylinder010
+    2300006: Cylinder012
+    2300008: Cylinder013
+    2300010: Cylinder014
+    2300012: Object001
+    2300014: Plane001
+    2300016: Sphere001
+    3300000: Cylinder008
+    3300002: Cylinder009
+    3300004: Cylinder010
+    3300006: Cylinder012
+    3300008: Cylinder013
+    3300010: Cylinder014
+    3300012: Object001
+    3300014: Plane001
+    3300016: Sphere001
+    4300000: Plane001
+    4300002: Sphere001
+    4300004: Object001
+    4300006: Cylinder002
+    4300008: Cylinder009
+    4300010: Cylinder008
+    4300012: Cylinder010
+    4300014: Cylinder013
+    4300016: Cylinder012
+    4300018: Cylinder014
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: Cylinder002
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Take 001
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 30
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

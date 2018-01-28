@@ -1,3 +1,5 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace UnityStandardAssets.Characters.ThirdPerson
@@ -8,10 +10,16 @@ namespace UnityStandardAssets.Characters.ThirdPerson
     {
         [SerializeField] float m_MovingTurnSpeed = 360;
         [SerializeField] float m_StationaryTurnSpeed = 180;
-        [SerializeField] float m_JumpPower = 12f;
+        [SerializeField] float m_DashPower = 12f;
         [SerializeField] float m_RunCycleLegOffset = 0.2f; //specific to the character in sample assets, will need to be modified to work with others
         [SerializeField] float m_MoveSpeedMultiplier = 1f;
         [SerializeField] float m_GroundCheckDistance = 0.1f;
+        [SerializeField]
+        private GameObject NovaBreath;
+
+        [SerializeField]
+        private float NovaBreathCoolDown = 3f;
+
 
         Rigidbody m_Rigidbody;
         float m_OrigGroundCheckDistance;
@@ -24,10 +32,11 @@ namespace UnityStandardAssets.Characters.ThirdPerson
         CapsuleCollider m_Capsule;
         bool m_Crouching;
 
+        bool canDoNovaBreath = true;
+
         [SerializeField]
         [Tooltip("")]
         private float MaxSpeed = 1.0f;
-
 
         void Start()
         {
@@ -36,19 +45,39 @@ namespace UnityStandardAssets.Characters.ThirdPerson
             m_CapsuleHeight = m_Capsule.height;
             m_CapsuleCenter = m_Capsule.center;
 
+            NovaBreath.SetActive(false);
+
             //m_Rigidbody.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezeRotationZ;
             m_OrigGroundCheckDistance = m_GroundCheckDistance;
         }
 
-        private void OnDrawGizmos()
+        IEnumerator DoNovaBreathCoroutine()
         {
-            Gizmos.color = Color.red;
-            Gizmos.DrawRay(transform.position, lala);
+            canDoNovaBreath = false;
+
+            m_Rigidbody.AddForce(m_DashPower * m_Rigidbody.transform.forward, ForceMode.Impulse);
+
+            NovaBreath.SetActive(true);
+
+            float t = 0f;
+            while (t < 1f)
+            {
+                t += Time.deltaTime / NovaBreathCoolDown;
+                yield return null;
+            }
+
+            NovaBreath.SetActive(false);
+
+            canDoNovaBreath = true;
         }
 
-        Vector3 lala;
         public void Move(Vector3 move, bool crouch, bool jump)
         {
+            if (jump && canDoNovaBreath)
+            {
+                Debug.LogFormat(gameObject, "JUMP!");
+                StartCoroutine(DoNovaBreathCoroutine());
+            }
 
             // convert the world relative moveInput vector into a local-relative
             // turn amount and forward amount required to head in the desired
@@ -58,9 +87,8 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 
             Vector3 fakeGravityDirection = GetComponent<JaquotFakeGravity>().fakeGravityDirection;
 
-            Vector3 worldMove = move;
-            move = Vector3.ProjectOnPlane(move, fakeGravityDirection);
-            lala = move;
+            Vector3 localMove = move;
+            move = Vector3.ProjectOnPlane(move, -fakeGravityDirection);
             m_TurnAmount = Mathf.Atan2(move.x, move.z);
             m_ForwardAmount = move.z;
 
@@ -74,35 +102,23 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 
             // send input and other state parameters to the animator
 
-            m_Rigidbody.AddRelativeForce(move * m_MoveSpeedMultiplier, ForceMode.VelocityChange);
+            m_Rigidbody.AddRelativeForce(localMove * m_MoveSpeedMultiplier, ForceMode.Force);
             if (m_Rigidbody.velocity.magnitude > MaxSpeed)
             {
-                m_Rigidbody.velocity = m_Rigidbody.velocity.normalized * MaxSpeed;
-                m_Rigidbody.rotation = Quaternion.LookRotation(m_Rigidbody.velocity, -fakeGravityDirection);
+                m_Rigidbody.AddForce(-m_Rigidbody.velocity, ForceMode.Force);
             }
 
-            if (jump)
+            if (m_Rigidbody.velocity.magnitude > 0.1f)
             {
-                m_Rigidbody.AddForce(m_JumpPower *  -fakeGravityDirection, ForceMode.Impulse);
-            }
+                m_Rigidbody.rotation = Quaternion.LookRotation(m_Rigidbody.velocity.normalized, -fakeGravityDirection);
 
-            //m_Rigidbody.AddRelativeTorque(Vector3.up * m_TurnAmount * m_MovingTurnSpeed, ForceMode.VelocityChange);
-
-            //UpdateAnimator(move);
-        }
-
-
-        void HandleGroundedMovement(bool crouch, bool jump)
-        {
-            // check whether conditions are right to allow a jump:
-            if (jump && !crouch)
-            {
-                // jump!
-                m_Rigidbody.velocity = new Vector3(m_Rigidbody.velocity.x, m_JumpPower, m_Rigidbody.velocity.z);
-                ///m_Animator.applyRootMotion = false;
-                m_GroundCheckDistance = 0.1f;
+                /*                 Quaternion fromForwardToVelocity = Quaternion.FromToRotation(transform.forward, m_Rigidbody.velocity.normalized);
+                                Vector3 axis;
+                                float turn;
+                                fromForwardToVelocity.ToAngleAxis(out turn, out axis);
+                                m_Rigidbody.AddRelativeTorque(transform.InverseTransformDirection(axis) * turn * m_MovingTurnSpeed, ForceMode.Force); */
+                //m_Rigidbody.rotation = Quaternion.identity;// Quaternion.LookRotation(m_Rigidbody.velocity.normalized, -fakeGravityDirection);
             }
         }
-
     }
 }
