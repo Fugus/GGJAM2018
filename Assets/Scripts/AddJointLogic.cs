@@ -35,6 +35,12 @@ public class AddJointLogic : MonoBehaviour
         {
             Debug.LogFormat(gameObject, "Collided with {0}", other.transform.GetHierarchyPath());
 
+            DestroyAfterDuration destroyAfterDuration = other.collider.gameObject.GetComponent<DestroyAfterDuration>();
+            if (destroyAfterDuration != null)
+            {
+                Destroy(destroyAfterDuration);
+            }
+
             // Adding to bouleJaquot
             {
                 GameObject jaquotOther = GameObject.Instantiate(other.gameObject);
@@ -73,7 +79,7 @@ public class AddJointLogic : MonoBehaviour
                 new Vector3(-1, -1, -1),
                 };
 
-                float maxRadius = 0f;
+/*                 float maxRadius = 0f;
                 foreach (Vector3 cubeCorner in cubeCorners)
                 {
                     Vector3 closestPoint = other.collider.ClosestPoint(1000f * cubeCorner);
@@ -85,7 +91,7 @@ public class AddJointLogic : MonoBehaviour
                 }
 
                 bonGarsToSmallBallJoint.autoConfigureConnectedAnchor = false;
-                bonGarsToSmallBallJoint.connectedAnchor = new Vector3(0f, bonGarsToSmallBallJoint.connectedAnchor.y, padding * (-maxRadius) / smallBall.transform.localScale.y);
+                bonGarsToSmallBallJoint.connectedAnchor = new Vector3(0f, bonGarsToSmallBallJoint.connectedAnchor.y, padding * (-maxRadius) / smallBall.transform.localScale.y); */
             }
         }
     }

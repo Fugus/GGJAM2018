@@ -50,7 +50,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
             ApplyExtraTurnRotation();
 
             // control and velocity handling is different when grounded and airborne:
-            HandleGroundedMovement(crouch, jump);
+            
         }
 
         void HandleGroundedMovement(bool crouch, bool jump)

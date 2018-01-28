@@ -157,12 +157,12 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4568894174961052}
-  - component: {fileID: 95134101548245944}
   - component: {fileID: 54837654974431492}
   - component: {fileID: 136072793189778930}
   - component: {fileID: 114541747050419606}
   - component: {fileID: 114750388428020998}
   - component: {fileID: 114791097402574380}
+  - component: {fileID: 114363530972436620}
   m_Layer: 13
   m_Name: Jaquot
   m_TagString: Untagged
@@ -977,7 +977,7 @@ MeshRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1647625183608522}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -1338,23 +1338,20 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!95 &95134101548245944
-Animator:
-  serializedVersion: 3
+--- !u!114 &114363530972436620
+MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1368443454341526}
   m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: b235179bd2a63d1468dd430670338c55, type: 3}
-  m_Controller: {fileID: 9100000, guid: e2cf68ff4b1ffda45a77f7307dd789b9, type: 2}
-  m_CullingMode: 1
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba5b44782688c0245823bea1fe6152a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 95002349259563772}
+  maxWalkSpeed: 7
+  minWalkSpeed: 0.1
 --- !u!114 &114541747050419606
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1400,6 +1397,8 @@ MonoBehaviour:
   m_GroundCheckDistance: 0.1
   NovaBreath: {fileID: 1647625183608522}
   NovaBreathCoolDown: 3
+  NovaBreathDuration: 1.1
+  animator: {fileID: 95002349259563772}
   MaxSpeed: 10
 --- !u!114 &114994351578704344
 MonoBehaviour:

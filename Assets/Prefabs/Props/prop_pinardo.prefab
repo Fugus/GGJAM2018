@@ -9,47 +9,47 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1293292212933752}
+  m_RootGameObject: {fileID: 1580851254365908}
   m_IsPrefabParent: 1
---- !u!1 &1293292212933752
+--- !u!1 &1580851254365908
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 4994188596366322}
-  - component: {fileID: 33332752076975270}
-  - component: {fileID: 23229244778688594}
-  - component: {fileID: 65658730425271650}
-  - component: {fileID: 54757307470503732}
-  - component: {fileID: 114507932089365290}
+  - component: {fileID: 4150196524056648}
+  - component: {fileID: 33450178994286110}
+  - component: {fileID: 23835731629417382}
+  - component: {fileID: 64329941680736194}
+  - component: {fileID: 114294975448211338}
+  - component: {fileID: 54041544237423082}
   m_Layer: 10
-  m_Name: prop_hamburger
+  m_Name: prop_pinardo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4994188596366322
+--- !u!4 &4150196524056648
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1293292212933752}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -30.851, y: 0, z: 16.429}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_GameObject: {fileID: 1580851254365908}
+  m_LocalRotation: {x: -0, y: 0.7944676, z: -0, w: 0.60730654}
+  m_LocalPosition: {x: 64.67997, y: 0.0000034866596, z: -23.384308}
+  m_LocalScale: {x: 1.884038, y: 1.884038, z: 1.884038}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &23229244778688594
+--- !u!23 &23835731629417382
 MeshRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1293292212933752}
+  m_GameObject: {fileID: 1580851254365908}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -78,19 +78,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!33 &33332752076975270
+--- !u!33 &33450178994286110
 MeshFilter:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1293292212933752}
-  m_Mesh: {fileID: 4300000, guid: 456c5a0db0309a8498b07526570aa75f, type: 3}
---- !u!54 &54757307470503732
+  m_GameObject: {fileID: 1580851254365908}
+  m_Mesh: {fileID: 4300000, guid: e9d1e44267a1f404582a9eaba05d9ee7, type: 3}
+--- !u!54 &54041544237423082
 Rigidbody:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1293292212933752}
+  m_GameObject: {fileID: 1580851254365908}
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
@@ -100,24 +100,26 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &65658730425271650
-BoxCollider:
+--- !u!64 &64329941680736194
+MeshCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1293292212933752}
+  m_GameObject: {fileID: 1580851254365908}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.28849792, y: 0.18340033, z: 0.26330185}
-  m_Center: {x: 0.0007343292, y: 0.24740925, z: 0.0057048798}
---- !u!114 &114507932089365290
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: e9d1e44267a1f404582a9eaba05d9ee7, type: 3}
+--- !u!114 &114294975448211338
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1293292212933752}
+  m_GameObject: {fileID: 1580851254365908}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b08f486da0715ab4bb0ddafffd90883e, type: 3}

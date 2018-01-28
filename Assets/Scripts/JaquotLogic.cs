@@ -19,7 +19,10 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 
         [SerializeField]
         private float NovaBreathCoolDown = 3f;
+        [SerializeField]
+        private float NovaBreathDuration = 3f;
 
+        public Animator animator;
 
         Rigidbody m_Rigidbody;
         float m_OrigGroundCheckDistance;
@@ -55,11 +58,22 @@ namespace UnityStandardAssets.Characters.ThirdPerson
         {
             canDoNovaBreath = false;
 
+            animator.SetTrigger("Dash");
+
             m_Rigidbody.AddForce(m_DashPower * m_Rigidbody.transform.forward, ForceMode.Impulse);
 
             NovaBreath.SetActive(true);
 
             float t = 0f;
+            while (t < 1f)
+            {
+                t += Time.deltaTime / NovaBreathDuration;
+                yield return null;
+            }
+
+            NovaBreath.SetActive(false);
+
+            t = 0f;
             while (t < 1f)
             {
                 t += Time.deltaTime / NovaBreathCoolDown;

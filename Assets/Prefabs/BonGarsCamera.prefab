@@ -55,7 +55,6 @@ GameObject:
   - component: {fileID: 20559915179681002}
   - component: {fileID: 92026518854632842}
   - component: {fileID: 124698310122102144}
-  - component: {fileID: 81461098265166726}
   m_Layer: 0
   m_Name: MainCamera
   m_TagString: MainCamera
@@ -83,14 +82,14 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1021530688591352}
-  m_LocalRotation: {x: 0.17819247, y: 0.051636405, z: -0.009363547, w: 0.98259526}
-  m_LocalPosition: {x: -0.414917, y: 1.5903106, z: -2.6204224}
+  m_LocalRotation: {x: -0.011769216, y: 0.9818083, z: -0.1780498, w: -0.06490151}
+  m_LocalPosition: {x: -15.8452, y: 8.906311, z: -6.050293}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4716097670007838}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 20.558, y: 187.564, z: 0}
 --- !u!4 &4886073479296862
 Transform:
   m_ObjectHideFlags: 1
@@ -131,7 +130,7 @@ Camera:
     m_Bits: 4294967295
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
-  m_TargetDisplay: 0
+  m_TargetDisplay: 1
   m_TargetEye: 3
   m_HDR: 0
   m_AllowMSAA: 1
@@ -155,13 +154,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!81 &81461098265166726
-AudioListener:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1169860592123404}
-  m_Enabled: 1
 --- !u!92 &92026518854632842
 Behaviour:
   m_ObjectHideFlags: 1
