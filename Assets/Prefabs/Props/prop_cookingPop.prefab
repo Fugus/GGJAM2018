@@ -21,9 +21,9 @@ GameObject:
   - component: {fileID: 4879921979165954}
   - component: {fileID: 33299465227527472}
   - component: {fileID: 23425720138413802}
-  - component: {fileID: 64903905294392178}
   - component: {fileID: 54925812205829676}
   - component: {fileID: 114016724504325804}
+  - component: {fileID: 65025166598073560}
   m_Layer: 10
   m_Name: prop_cookingPop
   m_TagString: Untagged
@@ -38,7 +38,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1092767796026802}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 63.571274, y: 0.0000034284915, z: -22.899654}
+  m_LocalPosition: {x: 142.56598, y: -3.6861e-17, z: 37.849277}
   m_LocalScale: {x: 1.884038, y: 1.884038, z: 1.884038}
   m_Children: []
   m_Father: {fileID: 0}
@@ -100,8 +100,8 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &64903905294392178
-MeshCollider:
+--- !u!65 &65025166598073560
+BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -109,11 +109,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 1
-  m_CookingOptions: 14
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300000, guid: 5cf25b9e055afbb42871a76e9f2127b1, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.10880982, y: 0.12417419, z: 0.14897878}
+  m_Center: {x: -0.008686158, y: 0.062087096, z: -0.0034997568}
 --- !u!114 &114016724504325804
 MonoBehaviour:
   m_ObjectHideFlags: 1

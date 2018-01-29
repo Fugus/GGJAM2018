@@ -21,9 +21,10 @@ GameObject:
   - component: {fileID: 4500738072507806}
   - component: {fileID: 33358600519220944}
   - component: {fileID: 23595400631143652}
-  - component: {fileID: 64908921429059024}
   - component: {fileID: 114079731811591356}
   - component: {fileID: 54059687020191978}
+  - component: {fileID: 65821916517095708}
+  - component: {fileID: 65034183844777222}
   m_Layer: 10
   m_Name: prop_chairPink
   m_TagString: Untagged
@@ -38,7 +39,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1234021477850512}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 66.32088, y: 0.000003509306, z: -23.444267}
+  m_LocalPosition: {x: 141.70667, y: -2.962874e-17, z: 34.687134}
   m_LocalScale: {x: 1.884038, y: 1.884038, z: 1.884038}
   m_Children: []
   m_Father: {fileID: 0}
@@ -100,8 +101,8 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &64908921429059024
-MeshCollider:
+--- !u!65 &65034183844777222
+BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -109,11 +110,21 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 1
-  m_CookingOptions: 14
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300000, guid: 8687f9727d7132d4ab0de187462ba8dc, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.29693735, y: 0.60242695, z: 0.043823197}
+  m_Center: {x: 0.00000003163665, y: 0.30121347, z: -0.12539837}
+--- !u!65 &65821916517095708
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1234021477850512}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.1996239, y: 0.21140023, z: 0.23629609}
+  m_Center: {x: -0.0005913206, y: 0.21057054, z: 0.014861715}
 --- !u!114 &114079731811591356
 MonoBehaviour:
   m_ObjectHideFlags: 1

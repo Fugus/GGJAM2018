@@ -21,9 +21,9 @@ GameObject:
   - component: {fileID: 4081706077474924}
   - component: {fileID: 33537199100128820}
   - component: {fileID: 23835589945964698}
-  - component: {fileID: 64979837590667680}
   - component: {fileID: 114192968630524962}
   - component: {fileID: 54230614364914100}
+  - component: {fileID: 136225038613062358}
   m_Layer: 10
   m_Name: prop_canRed
   m_TagString: Untagged
@@ -38,7 +38,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1133828981710804}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 63.531487, y: 0.00000373897, z: -25.253103}
+  m_LocalPosition: {x: 141.2525, y: -3.3765327e-17, z: 36.32805}
   m_LocalScale: {x: 1.884038, y: 1.884038, z: 1.884038}
   m_Children: []
   m_Father: {fileID: 0}
@@ -100,20 +100,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &64979837590667680
-MeshCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1133828981710804}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 1
-  m_CookingOptions: 14
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300000, guid: f26da322b32c0cd44951faa91e02bbd3, type: 3}
 --- !u!114 &114192968630524962
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -128,3 +114,16 @@ MonoBehaviour:
   validLayersForCollision:
     serializedVersion: 2
     m_Bits: 512
+--- !u!136 &136225038613062358
+CapsuleCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1133828981710804}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.03
+  m_Height: 0.12
+  m_Direction: 1
+  m_Center: {x: 0.0000000055879354, y: 0.054743122, z: 0}

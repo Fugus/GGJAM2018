@@ -124,19 +124,20 @@ public class StartOptions : MonoBehaviour {
 
     public IEnumerator FadeCanvasGroupAlpha(float startAlpha, float endAlpha, CanvasGroup canvasGroupToFadeAlpha)
     {
+yield return null;
+        /*         float elapsedTime = 0f;
+                float totalDuration = menuSettingsData.menuFadeTime;
 
-        float elapsedTime = 0f;
-        float totalDuration = menuSettingsData.menuFadeTime;
+                while (elapsedTime < totalDuration)
+                {
+                    elapsedTime += Time.deltaTime;
+                    float currentAlpha = Mathf.Lerp(startAlpha, endAlpha, elapsedTime / totalDuration);
+                    canvasGroupToFadeAlpha.alpha = currentAlpha;
+                    yield return null;
+                }
 
-        while (elapsedTime < totalDuration)
-        {
-            elapsedTime += Time.deltaTime;
-            float currentAlpha = Mathf.Lerp(startAlpha, endAlpha, elapsedTime / totalDuration);
-            canvasGroupToFadeAlpha.alpha = currentAlpha;
-            yield return null;
-        }
-
-        HideDelayed();
+                HideDelayed();
+         */
         Debug.Log("Coroutine done. Game started in same scene! Put your game starting stuff here.");
 
         SceneManager.LoadScene(1);

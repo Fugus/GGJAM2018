@@ -21,9 +21,9 @@ GameObject:
   - component: {fileID: 4570949507973024}
   - component: {fileID: 33525480336804040}
   - component: {fileID: 23176329466267990}
-  - component: {fileID: 64196935416103866}
   - component: {fileID: 54639906650500886}
   - component: {fileID: 114512038891524628}
+  - component: {fileID: 65247622803936876}
   m_Layer: 10
   m_Name: prop_telephone
   m_TagString: Untagged
@@ -38,7 +38,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1957842117743496}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 65.452835, y: 0.0000033588944, z: -22.453112}
+  m_LocalPosition: {x: 140.8237, y: -3.4638698e-17, z: 36.7243}
   m_LocalScale: {x: 1.884038, y: 1.884038, z: 1.884038}
   m_Children: []
   m_Father: {fileID: 0}
@@ -100,8 +100,8 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &64196935416103866
-MeshCollider:
+--- !u!65 &65247622803936876
+BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -109,11 +109,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 1
-  m_CookingOptions: 14
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300000, guid: 0130c97582a34764ea8825522a4f784f, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.037748937, y: 0.22066917, z: 0.065961465}
+  m_Center: {x: 0.015206048, y: 0.11033458, z: 0}
 --- !u!114 &114512038891524628
 MonoBehaviour:
   m_ObjectHideFlags: 1

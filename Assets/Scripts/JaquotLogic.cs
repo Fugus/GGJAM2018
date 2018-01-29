@@ -73,15 +73,13 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 
             NovaBreath.SetActive(false);
 
-            t = 0f;
+/*             t = 0f;
             while (t < 1f)
             {
                 t += Time.deltaTime / NovaBreathCoolDown;
                 yield return null;
             }
-
-            NovaBreath.SetActive(false);
-
+ */
             canDoNovaBreath = true;
         }
 
@@ -96,32 +94,42 @@ namespace UnityStandardAssets.Characters.ThirdPerson
             // convert the world relative moveInput vector into a local-relative
             // turn amount and forward amount required to head in the desired
             // direction.
-            if (move.magnitude > 1f) move.Normalize();
-            move = transform.InverseTransformDirection(move);
-
             Vector3 fakeGravityDirection = GetComponent<JaquotFakeGravity>().fakeGravityDirection;
 
-            Vector3 localMove = move;
-            move = Vector3.ProjectOnPlane(move, -fakeGravityDirection);
-            m_TurnAmount = Mathf.Atan2(move.x, move.z);
-            m_ForwardAmount = move.z;
-
-            //ApplyExtraTurnRotation();
-
-            // control and velocity handling is different when grounded and airborne:
-            //HandleGroundedMovement(crouch, jump);
-
-            //ScaleCapsuleForCrouching(crouch);
-            //PreventStandingInLowHeadroom();
-
-            // send input and other state parameters to the animator
-
-            m_Rigidbody.AddRelativeForce(localMove * m_MoveSpeedMultiplier, ForceMode.Force);
-            if (m_Rigidbody.velocity.magnitude > MaxSpeed)
+            if (!canDoNovaBreath)
             {
-                m_Rigidbody.AddForce(-m_Rigidbody.velocity, ForceMode.Force);
+                m_Rigidbody.AddRelativeForce(Vector3.forward * m_MoveSpeedMultiplier, ForceMode.Force);
+                if (m_Rigidbody.velocity.magnitude > MaxSpeed)
+                {
+                    m_Rigidbody.AddForce(-m_Rigidbody.velocity, ForceMode.Force);
+                }
             }
+            else
+            {
+                if (move.magnitude > 1f) move.Normalize();
+                move = transform.InverseTransformDirection(move);
 
+                Vector3 localMove = move;
+                move = Vector3.ProjectOnPlane(move, -fakeGravityDirection);
+                m_TurnAmount = Mathf.Atan2(move.x, move.z);
+                m_ForwardAmount = move.z;
+
+                //ApplyExtraTurnRotation();
+
+                // control and velocity handling is different when grounded and airborne:
+                //HandleGroundedMovement(crouch, jump);
+
+                //ScaleCapsuleForCrouching(crouch);
+                //PreventStandingInLowHeadroom();
+
+                // send input and other state parameters to the animator
+
+                m_Rigidbody.AddRelativeForce(localMove * m_MoveSpeedMultiplier, ForceMode.Force);
+                if (m_Rigidbody.velocity.magnitude > MaxSpeed)
+                {
+                    m_Rigidbody.AddForce(-m_Rigidbody.velocity, ForceMode.Force);
+                }
+            }
             if (m_Rigidbody.velocity.magnitude > 0.1f)
             {
                 m_Rigidbody.rotation = Quaternion.LookRotation(m_Rigidbody.velocity.normalized, -fakeGravityDirection);

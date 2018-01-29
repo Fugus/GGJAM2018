@@ -86,7 +86,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 2c280d8635ec42c498aa89c7fc8d64b3, type: 3}
+  - {fileID: 2100000, guid: b47bdbc231b7deb4aaf8f6e80ba9f92c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -141,8 +141,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81efc2c635207044c8ce08780fb1ce43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timerText: {fileID: 0}
+  timerTexts: []
   remainingTime: 3
+  PlayDurations: []
   Lost:
     m_PersistentCalls:
       m_Calls:
@@ -159,3 +160,4 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
+  playTime: 0

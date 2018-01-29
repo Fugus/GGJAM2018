@@ -21,9 +21,9 @@ GameObject:
   - component: {fileID: 4150196524056648}
   - component: {fileID: 33450178994286110}
   - component: {fileID: 23835731629417382}
-  - component: {fileID: 64329941680736194}
   - component: {fileID: 114294975448211338}
   - component: {fileID: 54041544237423082}
+  - component: {fileID: 136834437304650492}
   m_Layer: 10
   m_Name: prop_pinardo
   m_TagString: Untagged
@@ -38,7 +38,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1580851254365908}
   m_LocalRotation: {x: -0, y: 0.7944676, z: -0, w: 0.60730654}
-  m_LocalPosition: {x: 64.67997, y: 0.0000034866596, z: -23.384308}
+  m_LocalPosition: {x: 142.00125, y: -3.498583e-17, z: 36.898567}
   m_LocalScale: {x: 1.884038, y: 1.884038, z: 1.884038}
   m_Children: []
   m_Father: {fileID: 0}
@@ -100,20 +100,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &64329941680736194
-MeshCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1580851254365908}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 1
-  m_CookingOptions: 14
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300000, guid: e9d1e44267a1f404582a9eaba05d9ee7, type: 3}
 --- !u!114 &114294975448211338
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -128,3 +114,16 @@ MonoBehaviour:
   validLayersForCollision:
     serializedVersion: 2
     m_Bits: 512
+--- !u!136 &136834437304650492
+CapsuleCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1580851254365908}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.040858045
+  m_Height: 0.26
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.1, z: 0}
